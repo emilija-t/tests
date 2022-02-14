@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<head>
+    <title>Funkcija un to izsaukumi, testa plāns</title>
+</head>
+
+<body>
+    <h4>Funkcija, kura palielina vai samazina mainīgā vērtību par 1</h4>
+    <button type="button" onclick="samazina();">Samazināt</button>
+    <input type="text" id="skaitlis" placeholder="Sākotnējais skaitlis..">
+    <button type="button" onclick="palielina();">Palielināt</button>
+
+    <p id="output"></p>
+
+<script>
+    function samazina() {
+        a = document.getElementById("skaitlis").value;
+        a = parseFloat(a);
+        b = a-1;
+        document.getElementById("output").innerHTML = b;
+    }
+
+    function palielina() {
+        a = document.getElementById("skaitlis").value;
+        a = parseFloat(a);
+        b = a+1;
+        document.getElementById("output").innerHTML = b;
+    }
+</script>
+
+</body>
+</html>
